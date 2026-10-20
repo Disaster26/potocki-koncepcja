@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Potocki Dwór - hotel i restauracja pod Jędrzejowem | wesela, przyjęcia, konferencje</title>
+<meta name="description" content="Potocki Dwór w Potoku Wielkim pod Jędrzejowem: restauracja czynna codziennie od 12:00, sale na wesela i przyjęcia okolicznościowe, pokoje hotelowe i oferta dla firm.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Great+Vibes&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css?v=1">
+<link rel="preload" as="image" href="img/fasada-1800.webp" imagesrcset="img/fasada-800.webp 800w, img/fasada-1800.webp 1800w" imagesizes="100vw">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["Hotel","Restaurant"],"name":"Potocki Dwór","address":{"@type":"PostalAddress","streetAddress":"Potok Wielki 83A","postalCode":"28-300","addressLocality":"Jędrzejów","addressCountry":"PL"},"telephone":"+48798033101","email":"recepcja@potockidwor.pl","geo":{"@type":"GeoCoordinates","latitude":50.6085,"longitude":20.2364},"openingHours":"Mo-Su 12:00-22:00","servesCuisine":"polska"}</script>
+</head>
+<body>
+
+<header class="gora">
+  <div class="wrap gora-in">
+    <a class="logo" href="#start" aria-label="Potocki Dwór - strona główna"><span class="logo-n">Potocki Dwór</span><span class="logo-p">Hotel &amp; Restauracja</span></a>
+    <nav class="menu" aria-label="Menu główne">
+      <a href="#restauracja">Restauracja</a>
+      <a href="#przyjecia">Przyjęcia</a>
+      <a href="#hotel">Hotel</a>
+      <a href="#biznes">Dla firm</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="gora-akcje">
+      <a class="tel" href="tel:+48798033101" aria-label="Zadzwoń: 798 033 101"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>798 033 101</span></a>
+      <a class="btn btn-zloty btn-maly" href="#planer">Zapytaj o termin</a>
+      <button class="ham" type="button" aria-label="Menu" aria-expanded="false" aria-controls="panel"><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="panel" id="panel">
+  <a class="poz" href="#restauracja">Restauracja i menu</a>
+  <a class="poz" href="#przyjecia">Przyjęcia okolicznościowe</a>
+  <a class="poz" href="#hotel">Hotel</a>
+  <a class="poz" href="#biznes">Dla firm</a>
+  <a class="poz" href="#kontakt">Kontakt i dojazd</a>
+  <a class="btn btn-zloty" href="#planer">Zaplanuj przyjęcie</a>
+</div>
+
+<main id="start">
+<section class="hero">
+  <div class="hero-foto"><img src="img/fasada-1800.webp" srcset="img/fasada-800.webp 800w, img/fasada-1800.webp 1800w" sizes="100vw" alt="Elewacja Potockiego Dworu z kolumnami i balkonem" fetchpriority="high"></div>
+  <div class="wrap">
+    <p class="tag">Hotel i restauracja · Potok Wielki pod Jędrzejowem</p>
+    <h1>Przyjęcia, o&nbsp;których goście <em>mówią jeszcze latami</em></h1>
+    <p class="lead">Kuchnia czynna codziennie od 12:00, sale na wesela i rodzinne uroczystości, pokoje dla gości i wygodne miejsce na szkolenia firmowe.</p>
+    <div class="hero-cta">
+      <a class="btn btn-zloty" href="#planer">Sprawdź wolny termin</a>
+      <a class="btn btn-linia" href="#restauracja">Zobacz menu</a>
+    </div>
+    <ul class="fakty">
+      <li><b>12:00-22:00</b><span>restauracja codziennie</span></li>
+      <li><b>2 sale</b><span>bankietowa i kameralna</span></li>
+      <li><b>24 h</b><span>recepcja hotelu</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sekcja wybor" aria-label="Na skróty">
+  <div class="wrap">
+    <div class="kafle">
+      <a class="kafel" href="#restauracja"><img src="img/rest1-800.webp" alt="Sala restauracyjna z drewnianymi stołami" loading="lazy"><span class="k-t">Restauracja</span><span class="k-o">Obiad, kolacja, menu dnia</span></a>
+      <a class="kafel" href="#przyjecia"><img src="img/sala-800.webp" alt="Sala bankietowa przygotowana na przyjęcie" loading="lazy"><span class="k-t">Przyjęcia</span><span class="k-o">Wesela, komunie, chrzciny</span></a>
+      <a class="kafel" href="#hotel"><img src="img/pokoj1-800.webp" alt="Pokój hotelowy z podwójnym łóżkiem" loading="lazy"><span class="k-t">Hotel</span><span class="k-o">Noclegi dla gości i firm</span></a>
+      <a class="kafel" href="#biznes"><img src="img/biznes-800.webp" alt="Sala przygotowana na spotkanie firmowe" loading="lazy"><span class="k-t">Dla firm</span><span class="k-o">Szkolenia i konferencje</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja restauracja" id="restauracja">
+  <div class="wrap">
+    <div class="naglowek">
+      <p class="tag">Restauracja</p>
+      <h2>Domowa kuchnia w&nbsp;dworskim wydaniu</h2>
+      <p class="lead-s">Jasna sala z widokiem na ogród, obiady w tygodniu i spokojne kolacje w weekend. Menu z cenami jest zawsze aktualne, bo Państwo zmieniają je sami w panelu.</p>
+    </div>
+    <div class="menu-box">
+      <div class="zakladki" role="tablist" aria-label="Kategorie menu">
+        <button role="tab" aria-selected="true" data-k="przystawki">Przystawki</button>
+        <button role="tab" aria-selected="false" data-k="zupy">Zupy</button>
+        <button role="tab" aria-selected="false" data-k="glowne">Dania główne</button>
+        <button role="tab" aria-selected="false" data-k="desery">Desery</button>
+        <button role="tab" aria-selected="false" data-k="dzieci">Dla dzieci</button>
+      </div>
+      <div class="dania" id="dania" aria-live="polite"></div>
+      <p class="przyp">Pozycje i ceny przykładowe - w gotowej stronie Państwa menu i zdjęcia dań.</p>
+    </div>
+    <div class="galeria-r">
+      <img src="img/rest2-800.webp" alt="Restauracja z kolumnami i złotym żyrandolem" loading="lazy">
+      <img src="img/rest3-800.webp" alt="Stoliki przy oknie z zasłonami" loading="lazy">
+      <img src="img/oliwy-800.webp" alt="Oliwy smakowe na stole" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="sekcja przyjecia ciemna" id="przyjecia">
+  <div class="wrap">
+    <div class="naglowek">
+      <p class="tag">Przyjęcia okolicznościowe</p>
+      <h2>Wesele, komunia, chrzciny, jubileusz</h2>
+      <p class="lead-s">Dobieramy salę do liczby gości, przygotowujemy menu i dekoracje. Państwo przychodzą na gotowe.</p>
+    </div>
+    <div class="sale">
+      <article class="sala">
+        <img src="img/sala-800.webp" srcset="img/sala-800.webp 800w, img/sala-1800.webp 1800w" sizes="(max-width:900px) 100vw, 50vw" alt="Duża sala bankietowa z długimi stołami" loading="lazy">
+        <div class="sala-t"><h3>Sala bankietowa</h3><p>Duża, jasna sala z parkietem do tańca. Na wesela, komunie i bankiety.</p><span class="ile">do ok. 150 gości*</span></div>
+      </article>
+      <article class="sala">
+        <img src="img/kameralna-800.webp" srcset="img/kameralna-800.webp 800w, img/kameralna-1800.webp 1800w" sizes="(max-width:900px) 100vw, 50vw" alt="Kameralna sala z oknami na ogród" loading="lazy">
+        <div class="sala-t"><h3>Sala kameralna</h3><p>Przytulne wnętrze z oknami na zieleń. Na chrzciny, urodziny i spotkania rodzinne.</p><span class="ile">do ok. 40 gości*</span></div>
+      </article>
+    </div>
+    <div class="pas-zdjec">
+      <img src="img/stol-800.webp" alt="Nakryty stół weselny ze złotymi podtalerzami" loading="lazy">
+      <img src="img/scianka-800.webp" alt="Ścianka z balonami do zdjęć" loading="lazy">
+      <img src="img/desery-800.webp" alt="Desery w pucharkach na stojaku" loading="lazy">
+      <img src="img/bufet-800.webp" alt="Bufet z przekąskami" loading="lazy">
+      <img src="img/wina-800.webp" alt="Stół z winami i kieliszkami" loading="lazy">
+    </div>
+
+    <div class="planer" id="planer">
+      <div class="planer-l">
+        <p class="tag">Planer przyjęcia</p>
+        <h3>Sprawdź termin w&nbsp;30 sekund</h3>
+        <p>Wybierz okazję, liczbę gości i datę. Strona od razu pokaże, która sala pasuje i czy termin jest wolny, a zapytanie z tymi danymi trafi prosto do Państwa skrzynki.</p>
+        <div class="pole"><span class="et">Okazja</span>
+          <div class="chipy" data-p="okazja">
+            <button type="button" aria-pressed="true" data-v="Wesele">Wesele</button>
+            <button type="button" aria-pressed="false" data-v="Komunia">Komunia</button>
+            <button type="button" aria-pressed="false" data-v="Chrzciny">Chrzciny</button>
+            <button type="button" aria-pressed="false" data-v="Urodziny / jubileusz">Jubileusz</button>
+            <button type="button" aria-pressed="false" data-v="Spotkanie firmowe">Firmowe</button>
+          </div>
+        </div>
+        <div class="pole"><label class="et" for="goscie">Liczba gości: <b id="gosc-l">80</b></label>
+          <input type="range" id="goscie" min="10" max="150" step="5" value="80">
+        </div>
+        <div class="pole"><span class="et">Data</span>
+          <div class="kal" id="kal"></div>
+        </div>
+      </div>
+      <div class="planer-p" id="wynik" aria-live="polite"></div>
+    </div>
+    <p class="przyp jasny">* Liczby gości i zajęte terminy w planerze są przykładowe. W gotowej stronie kalendarz pokazuje Państwa rezerwacje.</p>
+  </div>
+</section>
+
+<section class="sekcja hotel" id="hotel">
+  <div class="wrap hotel-in">
+    <div class="hotel-t">
+      <p class="tag">Hotel</p>
+      <h2>Nocleg piętro wyżej</h2>
+      <p class="lead-s">Pokoje jedno-, dwu- i wieloosobowe z łazienkami. Goście weselni nie muszą szukać noclegu ani taksówki, a firmy mają szkolenie i nocleg w jednym miejscu.</p>
+      <ul class="lista">
+        <li>recepcja czynna całą dobę</li>
+        <li>śniadanie w restauracji na dole</li>
+        <li>pokoje dla gości weselnych w pakiecie z przyjęciem</li>
+      </ul>
+      <a class="btn btn-ciemny" href="tel:+48798033101">Zarezerwuj: 798 033 101</a>
+    </div>
+    <div class="hotel-f">
+      <img class="h1" src="img/pokoj1-800.webp" alt="Pokój dwuosobowy z oknem" loading="lazy">
+      <img class="h2" src="img/pokoj2-800.webp" alt="Pokój z dwoma łóżkami pod skosem" loading="lazy">
+      <img class="h3" src="img/lazienka-800.webp" alt="Łazienka z prysznicem" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="sekcja biznes" id="biznes">
+  <div class="wrap biznes-in">
+    <div class="biznes-f"><img src="img/biznes-800.webp" srcset="img/biznes-800.webp 800w, img/biznes-1800.webp 1800w" sizes="(max-width:900px) 100vw, 50vw" alt="Sala przygotowana na szkolenie z przekąskami" loading="lazy"></div>
+    <div class="biznes-t">
+      <p class="tag">Dla firm</p>
+      <h2>Szkolenie, konferencja, impreza firmowa</h2>
+      <p class="lead-s">Jedno miejsce i jedna faktura: sala, przerwy kawowe, obiad i nocleg dla uczestników.</p>
+      <div class="pakiety">
+        <div class="pak"><h3>Dzień szkoleniowy</h3><p>sala, przerwa kawowa, obiad dwudaniowy</p></div>
+        <div class="pak"><h3>Szkolenie z noclegiem</h3><p>jak wyżej plus kolacja, nocleg i śniadanie</p></div>
+        <div class="pak"><h3>Impreza firmowa</h3><p>wigilia, jubileusz firmy, spotkanie z klientami</p></div>
+      </div>
+      <a class="btn btn-ciemny" href="#planer" data-firmowe>Zapytaj o ofertę dla firmy</a>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja kontakt ciemna" id="kontakt">
+  <div class="wrap kontakt-in">
+    <div class="kontakt-t">
+      <p class="tag">Kontakt i dojazd</p>
+      <h2>Potok Wielki 83A</h2>
+      <p class="adr">28-300 Jędrzejów, kilka minut samochodem od centrum miasta</p>
+      <dl class="dane">
+        <dt>Rezerwacje</dt><dd><a href="tel:+48798033101">798 033 101</a></dd>
+        <dt>E-mail</dt><dd><a href="mailto:recepcja@potockidwor.pl">recepcja@potockidwor.pl</a></dd>
+        <dt>Restauracja</dt><dd>codziennie 12:00-22:00</dd>
+        <dt>Hotel</dt><dd>recepcja całodobowo</dd>
+      </dl>
+      <a class="btn btn-zloty" href="https://www.google.com/maps/dir/?api=1&amp;destination=50.6085,20.2364" target="_blank" rel="noopener">Wyznacz trasę</a>
+    </div>
+    <div class="mapa" id="mapa" role="region" aria-label="Mapa dojazdu"></div>
+  </div>
+</section>
+</main>
+
+<footer class="stopka">
+  <div class="wrap stopka-in">
+    <span class="logo-n">Potocki Dwór</span>
+    <p>Hotel &amp; Restauracja · Potok Wielki 83A, 28-300 Jędrzejów · <a href="tel:+48798033101">798 033 101</a></p>
+    <p class="wiz">Wizualizacja koncepcyjna nowej strony przygotowana dla Potockiego Dworu. Teksty i układ do ustalenia.</p>
+  </div>
+</footer>
+
+<div class="mob">
+  <a class="btn btn-linia-j" href="tel:+48798033101">Zadzwoń</a>
+  <a class="btn btn-zloty" href="#planer">Zapytaj o termin</a>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js?v=1"></script>
+</body>
+</html>
